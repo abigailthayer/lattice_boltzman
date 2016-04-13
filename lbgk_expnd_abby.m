@@ -10,6 +10,7 @@
 % Edited by AGT 4/11/2016 to impose boundary conditions similar to streambed or subglacial rivers
 %
 
+
 omega=1.0;    % = 1/tau where tau=relaxation time scale
 density=1.0;  % initial density
 
@@ -22,6 +23,9 @@ t3=1/36;  % Diagonal directions (ie. 35/36 keeps particles from moving in diagon
 % This sneakily incorporates the factor of of 3 that shows up in the
 % equilibrium distributions, so c_squ actually equals c^2/3.
 c_squ=1/3;  
+
+% Lattice size
+nx=31; ny=31;
 
 % Set up matrix. The matrix is nx by ny by 9, where 9 represents the 9
 % discrete lattice velocities. F is the current distribution for each
